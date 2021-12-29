@@ -1,8 +1,11 @@
+pyrogram
 tgcrypto
-requests
-youtube_dl
-ffmpeg-python
+aiohttp
 python-dotenv
-pytgcalls==3.0.0.dev19
-youtube_search_python==1.4.9
-git+https://github.com/AsmSafone/pyrogram@master
+motor
+aiofiles
+dnspython
+apscheduler
+requests
+psutil
+pyromod

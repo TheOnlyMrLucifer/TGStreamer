@@ -1,98 +1,190 @@
-# Telegram Video Player Bot [![Mentioned in Awesome](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/tgcalls/awesome-tgcalls)
-![GitHub Repo stars](https://img.shields.io/github/stars/AsmSafone/VideoPlayerBot?color=blue&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/AsmSafone/VideoPlayerBot?color=green&style=flat)
-![GitHub issues](https://img.shields.io/github/issues/AsmSafone/VideoPlayerBot)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/AsmSafone/VideoPlayerBot)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AsmSafone/VideoPlayerBot)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AsmSafone/VideoPlayerBot)
-![GitHub contributors](https://img.shields.io/github/contributors/AsmSafone/VideoPlayerBot?style=flat)
-![GitHub repo size](https://img.shields.io/github/repo-size/AsmSafone/VideoPlayerBot?color=red)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/AsmSafone/VideoPlayerBot)
-![GitHub](https://img.shields.io/github/license/AsmSafone/VideoPlayerBot)
-[![Bot Updates](https://img.shields.io/badge/VideoPlayerBot-Updates%20Channel-green)](https://t.me/AsmSafone)
-[![Bot Support](https://img.shields.io/badge/VideoPlayerBot-Support%20Group-blue)](https://t.me/safothebot)
+![GitHub Repo stars](https://img.shields.io/github/stars/code-x-mania/Filestreambot-pro?color=blue&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/code-x-mania/Filestreambot-pro?color=green&style=flat)
+![GitHub contributors](https://img.shields.io/github/contributors/code-x-mania/Filestreambot-pro?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/code-x-mania/Filestreambot-pro?color=yellow)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/code-x-mania/Filestreambot-pro)
+![GitHub](https://img.shields.io/github/license/code-x-mania/Filestreambot-pro)
+[![Bot Support](https://img.shields.io/badge/File%20Stream%20Bot-support%20group-blue)](https://t.me/codexmania)
 
-An Telegram Bot By [@AsmSafone](https://t.me/AsmSafone) To Stream Videos in Telegram Voice Chat.
 
-## Main Features
+<h1 align="center">FileStreamBot</h1>
+<p align="center"> 
+  <img src="https://socialify.git.ci/Code-X-Mania/Filestreambot-pro/image?description=1&descriptionEditable=A%20very%20fast%20file%20streaming%20bot%20used%20for%20streaming%20and%20downloading%20movies&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F88939380%2F137127129-a86fc939-2931-4c66-b6f6-b57711a9eab7.png&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Cover Image" width="650">
+  </a>
+  
+# GIVE A STAR AND FORK ELSE NO MORE OPENSOURCE 
+ <p align="center">
+    A Telegram bot to turn all media and documents files to web link .
+    <br />
+   </strong></a>
+    <br />
+    <a href="https://github.com/code-x-mania/FileStreamBotpro/issues">Report a Bug</a>
+    |
+    <a href="https://github.com/code-x-mania/FileStreamBot-pro/issues">Request Feature</a>
+  </p>
 
-- Supports Live Streaming.
-- Supports YouTube Streaming.
-- Supports Live Radio Streaming.
-- Supports Video Files Streaming.
-- Supports YouTube Live Streaming.
-- User Account Protection (PM Guard)
 
-## Deploy Own Bot
+<hr>
 
-### Railway (Recommended)
-<p><a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FAsmSafone%2FVideoPlayerBot&envs=API_ID%2CAPI_HASH%2CBOT_TOKEN%2CSESSION_STRING%2CASSISTANT_NAME%2CSUDO_USERS%2CREPLY_MESSAGE%2CSUPPORT_GROUP%2CUPDATES_CHANNEL&optionalEnvs=REPLY_MESSAGE%2CSUPPORT_GROUP%2CUPDATES_CHANNEL&API_IDDesc=User+Account+Telegram+API_ID+get+it+from+my.telegram.org%2Fapps&API_HASHDesc=User+Account+Telegram+API_HASH+get+it+from+my.telegram.org%2Fapps&BOT_TOKENDesc=Your+Telegram+Bot+Token%2C+get+it+from+%40Botfather+XD&SESSION_STRINGDesc=Pyrogram+Session+String+of+User+Account%2C+get+it+from+%40genStr_robot&ASSISTANT_NAMEDesc=Your+Video+Player%27s+assistant+username+without+%40&SUDO_USERSDesc=ID+of+Sudo+Users+who+can+use+Admin+commands+%28for+multiple+users+seperated+by+space%29&REPLY_MESSAGEDesc=A+reply+message+to+those+who+message+the+USER+account+in+PM.+Make+it+blank+if+you+do+not+need+this+feature.&SUPPORT_GROUPDesc=Support+Group+username+without+%40+%5BLeave+this+if+you+don%27t+have+one%5D&UPDATES_CHANNELDesc=Updates+Channel+username+without+%40+%5BLeave+this+if+you+don%27t+have+one%5D&SUPPORT_GROUPDefault=SafoTheBot&UPDATES_CHANNELDefault=AsmSafone&REPLY_MESSAGEDefault=Hello+Sir%2C+I%27m+a+bot+to+stream+videos+on+telegram+voice+chat%2C+not+having+time+to+chat+with+you+%F0%9F%98%82%21&referralCode=SAFONE"><img src="https://img.shields.io/badge/Deploy%20To%20Railway-blueviolet?style=for-the-badge&logo=railway" width="200""/></a></p>
 
-### Heroku (Don't Complain)
-<p><a href="https://heroku.com/deploy?template=https://github.com/AsmSafone/VideoPlayerBot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
-## Commands (Set In Botfather)
-```sh
-start - Start The Bot
-help - Show Help Message
-play - Start Audio Streaming
-stream - Start Video Streaming
-pause - Pause The Current Stream
-resume - Resume The Paused Stream
-endstream - Stop Streaming & Left VC
+## 🍁 About This Bot :
+
+![streaming-Professional-live_1](https://user-images.githubusercontent.com/88939380/137127129-a86fc939-2931-4c66-b6f6-b57711a9eab7.png)
+
+</p>
+<p align='center'>
+    This bot will give you stream links for Telegram files without the need of waiting till the download completes
+</p>
+
+
+## ♢ How to make your own :
+
+Either you could locally host or deploy on [Heroku](https://heroku.com)
+### 💜 Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
+
+<br>
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FCode-X-Mania%2FFilestreambot-pro&envs=API_HASH%2CAPI_ID%2CFQDN%2CDATABASE_URL%2CBOT_TOKEN%2CHAS_SSL%2CNO_PORT%2COWNER_ID%2CPORT%2COWNER_USERNAME%2CSESSION_NAME%2CUPDATES_CHANNEL%2CBIN_CHANNEL%2CMY_PASS&API_HASHDesc=Get+it+from+my.telegram.org&API_IDDesc=Get+it+from+my.telegram.org&FQDNDesc=Your+railway+app+URL&DATABASE_URLDesc=Get+it+from+mongodb.com&BOT_TOKENDesc=Get+it+from+%40botfather&HAS_SSLDesc=Don%27t+touch+this&NO_PORTDesc=keep+default+value.&OWNER_IDDesc=Your+telegram+id&PORTDesc=default&OWNER_USERNAMEDesc=tg+username&SESSION_NAMEDesc=Keep+default+or+enter+your+name&UPDATES_CHANNELDesc=channel+username+without+%40+else+None&BIN_CHANNELDesc=id+of+channel&MY_PASSDesc=Bot+pass&FQDNDefault=EDIT+AFTER+DEPLOYING+THE+BOT+LEAVE+IT+AS+IT+IS+RIGHT+NOW&HAS_SSLDefault=True&NO_PORTDefault=False&OWNER_IDDefault=+get+it+from+%40username_to_id_bot&PORTDefault=8080&SESSION_NAMEDefault=I_love_opensource&UPDATES_CHANNELDefault=None&BIN_CHANNELDefault=also+add+bot+to+it&MY_PASSDefault=adarsh&referralCode=ADARSH)
+
+
+
+#### ♢ Click on This Drop-down and get more details
+
+<br>
+<details>
+  <summary><b>Deploy on Heroku :</b></summary>
+
+
+1. Fork This Repo
+2. Click on the button to Deploy and follow steps
+
+<h4> So Follow Above Steps 👆 and then deploy other wise bot won't work</h4>
+
+Press the below button to Fast deploy on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+then goto the <a href="#mandatory-vars">variables tab</a> for more info on setting up environmental variables. </details>
+
+<details>
+  <summary><b>Features:</b></summary>
+  
+<p>
+
+🚀Features<p>
+💥Superfast⚡️ download and stream links.<br>
+💥No ads in generated links.<br>
+💥Superfast interface.<br>
+💥Along with the links you also get file information like name,size ,etc.<br>
+💥Updates channel Support.<br>
+💥Mongodb database support for broadcasting.<br>
+💥Password Protection.<br>
+💥User Freindly Interface.<br>
+💥Ping check.<br>
+💥User DC Check.<br>
+💥Real time CPU , RAM , Internet usage. <br>
+💥Custom Domain support. <br>
+💥All unwanted code removed. <br>
+💥Removes forwarded tag in channel. <br>
+💥A lot more tired of writing check out by deploying it. 
+</details>
+<details>
+  <summary><b>Host it on VPS Locally :</b></summary>
+
+
+```py
+git clone https://github.com/Code-X-Mania/Filestreambot-pro
+cd Filestreambot-pro
+virtualenv -p /usr/bin/python3 venv
+. ./venv/bin/activate
+pip install -r requirements.txt
+python3 -m Code_X_Mania
 ```
 
-## Config Vars
-1. `API_ID` : User Account Telegram API_ID, get it from my.telegram.org
-2. `API_HASH` : User Account Telegram API_HASH, get it from my.telegram.org
-3. `BOT_TOKEN` : Your Telegram Bot Token, get it from @Botfather XD
-4. `SESSION_STRING` : Pyrogram Session String of User Account, get it from [@genStr robot](http://t.me/genStr_robot) or [![genStr](https://img.shields.io/badge/repl.it-genStr-yellowgreen)](https://repl.it/@AsmSafone/genStr)
-5. `ASSISTANT_NAME` : Your Video Player's assistant username without @.
-6. `SUPPORT_GROUP` : Support Group username without @ [Leave this if you don't have one]
-7. `UPDATES_CHANNEL` : Updates Channel username without @ [Leave this if you don't have one]
-8. `SUDO_USERS` : ID of Users who can use Admins commands (for multiple users seperated by space)
-9. `REPLY_MESSAGE` : A reply to those who message the USER account in PM. Leave it blank if you do not need this feature.
+and to stop the whole bot,
+ do <kbd>CTRL</kbd>+<kbd>C</kbd>
 
-## Requirements
-- Python 3.6 or Higher.
-- Latest [FFmpeg Python](https://www.ffmpeg.org/).
-- [Telegram API key](https://docs.pyrogram.org/intro/quickstart#enjoy-the-api).
-- Pyrogram [String Session](http://t.me/genStr_robot) Of The Account.
-- The User Account Needs To Be An Admin In The Group / Channel.
+Setting up things
 
-## Self Host
-```sh
-$ git clone -b main https://github.com/AsmSafone/VideoPlayerBot
-$ cd VideoPlayerBot
-$ sudo apt-get install python3-pip ffmpeg
-$ pip3 install -U pip
-$ pip3 install -U -r requirements.txt
-# <create .env variables appropriately>
-$ python3 main.py
+If you're on Heroku, just add these in the Environmental Variables
+or if you're Locally hosting, create a file named `config.env` in the root directory and add all the variables there.
+An example of `config.env` file:
+
+```py
+API_ID=12345
+API_HASH=esx576f8738x883f3sfzx83
+BOT_TOKEN=55838383:yourtbottokenhere
+BIN_CHANNEL=-100
+PORT=8080
+FQDN=your_server_ip
+OWNER_ID=your_user_id
+DATABASE_URL=mongodb_uri
 ```
+  </details>
 
-## License
-```sh
-VideoPlayerBot, Telegram Video Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+<details>
+  <summary><b>Vars and Details :</b></summary>
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+`API_ID` : Goto [my.telegram.org](https://my.telegram.org) to obtain this.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+`API_HASH` : Goto [my.telegram.org](https://my.telegram.org) to obtain this.
+  
+`MY_PASS` : Bot PASSWORD
 
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
-```
+`BOT_TOKEN` : Get the bot token from [@BotFather](https://telegram.dog/BotFather)
 
-## Credits
+`BIN_CHANNEL` : Create a new channel (private/public), add [@missrose_bot](https://telegram.dog/MissRose_bot) as admin to the channel and type /id. Now copy paste the ID into this field.
+  
+`OWNER_USERNAME` : U should be knowing it afterall it's your username dont remember ? it just go to settings!
 
-- [Me](https://github.com/AsmSafone) for [Noting](https://github.com/AsmSafone/VideoPlayerBot) 😬
-- [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram) ❤️
-- [MarshalX](https://github.com/MarshalX) for [pytgcalls](https://github.com/MarshalX/tgcalls) ❤️
-- And Thanks To All [Contributors](https://github.com/AsmSafone/VideoPlayerBot/graphs/contributors)! ❤️
+`OWNER_ID` : Your Telegram User ID
+
+`DATABASE_URL` : MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help to get the URI you can ask in [Me Telegram](https://t.me/adarshhh0).
+
+ Option Vars
+
+`UPDATES_CHANNEL` : Put a Public Channel Username, so every user have to Join that channel to use the bot. Must add bot to channel as Admin to work properly.
+
+`BANNED_CHANNELS` : Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with <kbd>Space</kbd>.
+
+`SLEEP_THRESHOLD` : Set a sleep threshold for flood wait exceptions happening globally in this telegram bot instance, below which any request that raises a flood wait will be automatically invoked again after sleeping for the required amount of time. Flood wait exceptions requiring higher waiting times will be raised. Defaults to 60 seconds.
+
+`WORKERS` : Number of maximum concurrent workers for handling incoming updates. Defaults to `3`
+
+`PORT` : The port that you want your webapp to be listened to. Defaults to `8080`
+
+`WEB_SERVER_BIND_ADDRESS` : Your server bind adress. Defauls to `0.0.0.0`
+
+`NO_PORT` : If you don't want your port to be displayed. You should point your `PORT` to `80` (http) or `443` (https) for the links to work. Ignore this if you're on Heroku.
+
+`FQDN` :  A Fully Qualified Domain Name if present. Defaults to `WEB_SERVER_BIND_ADDRESS` </details>
+
+<details>
+  <summary><b>How to Use :</b></summary>
+
+:warning: **Before using the  bot, don't forget to add the bot to the `BIN_CHANNEL` as an Admin**
+ 
+`/start` : To check if the bot is alive or not.
+
+To get an instant stream link, just forward any media to the bot and boom, its fast af.
+  
+![image](https://user-images.githubusercontent.com/88939380/145798095-3cdad108-96b0-4391-a540-cad144d6b864.png)
+
+
+### Channel Support
+Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button. </details>
+
+### Credits : 
+
+- [Adarsh Goel_(me)](https://github.com/code-x-mania)
+- [EverythingSuckz](https://github.com/EverythingSuckz) 
+- [Jigar Varma](https://github.com/jigarvarma2005)
+- Everyone In This Journey !
+
+
+ 
+ 
+

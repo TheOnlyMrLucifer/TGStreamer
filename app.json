@@ -1,73 +1,111 @@
 {
-    "name": "Telegram Video Player Bot",
-    "description": "An Telegram Bot By @AsmSafone To Stream Videos in Voice Chat",
-    "repository": "https://github.com/TheOnlyMrLucifer/TGStreamer",
-    "logo": "https://telegra.ph/file/1adba0bdcbcf7d81c8ab8.jpg",
-    "stack": "container",
-    "keywords": [
+  "name": "TheOnlyMrLucifer-FileStreamBot",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @TheOnlyMrLucifer",
+  "keywords": [
       "telegram",
-      "voicechat",
-      "bot",
-      "video",
-      "player",
-      "python",
+      "stream",
+      "web",
       "pyrogram",
-      "pytgcalls",
-      "videoplayer"
+      "aiohttp",
+      "python",
+      "plugin",
+      "modular",
+      "media",
+      "bot"
     ],
-    "env": {
+  "repository": "https://github.com/TheOnlyMrLucifer/TGStreamer",
+  "success_url": "/",
+  "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
+  "website": "http://adarsh.eu.org",
+  "env": {
+      "ENV": {
+          "description": "Set this to True if you don't want to crash the bot",
+          "value": "True"
+      },
+      "APP_NAME": {
+          "description": "Copy-Paste the app name that you just typed above."
+      },
       "API_ID": {
-        "description": "User Account Telegram API_ID get it from my.telegram.org/apps",
-        "required": true
+          "description": "Get this value from https://my.telegram.org"
       },
       "API_HASH": {
-        "description": "User Account Telegram API_HASH get it from my.telegram.org/apps",
-        "required": true
+          "description": "Get this value from https://my.telegram.org"
       },
       "BOT_TOKEN": {
-        "description": "Your Telegram Bot Token, get it from @Botfather XD",
-        "required": true
+          "description": "Get this value from @BotFather"
       },
-      "SESSION_STRING": {
-        "description": "Pyrogram Session String of User Account, get it from @genStr_robot",
-        "required": true
+      "BIN_CHANNEL": {
+          "description": "The BIN Channel ID. Read the readme for more info about this var"
+          
       },
-      "SUDO_USERS": {
-        "description": "ID of Sudo Users who can use Admin commands (for multiple users seperated by space)",
-        "required": true
+      "DATABASE_URL": {
+          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe"
       },
-      "ASSISTANT_NAME": {
-        "description": "Your Video Player's assistant Username without @.",
-        "required": true
+      "OWNER_ID": {
+          "description": "Your Telegram User ID  like 1234509"
       },
-      "SUPPORT_GROUP": {
-        "description": "Support Group username without @ [Leave this if you don't have one]",
-        "required": false,
-        "value": "AsmSupport"
-      },     
+      "BANNED_CHANNELS": {
+          "description": "Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with Space.",
+          "required": false
+      },
       "UPDATES_CHANNEL": {
-        "description": "Updates Channel username without @ [Leave this if you don't have one].",
-        "required": false,
-        "value": "AsmSafone"
+          "description": "Put a Public Channel Username  without @, so every user have to Join that channel to use the bot. Must add bot to channel as Admin to work properly.IF DONT WANT KEEP VALUE AS None",
+          "value":"None",
+          "required": false
+          
       },
-      "REPLY_MESSAGE": {
-        "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-        "value": "Hello Sir, I'm a bot to stream videos on telegram voice chat, not having time to chat with you 😂!",
-        "required": false
-      }
-    },
-    "formation": {
-      "worker": {
-        "quantity": 1,
-        "size": "free"
-      }
-    },
-    "buildpacks": [
-      {
-        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "OWNER_USERNAME": {
+          "description": "Enter your username without @  example  codexmania."
       },
-      {
-        "url": "heroku/python"
+      "SLEEP_THRESHOLD": {
+          "description": "Floodwait Sleep timer. Read the readme for more info about this var",
+          "required": false
+      },
+      "WORKERS": {
+          "description": "No. of workers that is to be assigned. Read the readme for more info about this var",
+          "required": false
+      },
+      "PORT": {
+          "description": "Port that you want your webapp to be listened to. Read the readme for more info about this var",
+          "value": "8080",
+          "required": false
+      },
+      "NO_PORT": {
+          "description": "If you don't want your port to be displayed. Read the readme for more info about this var",
+          "value": "False",
+          "required": false
+      },
+      "HAS_SSL": {
+          "description": "Default value is True",
+          "value": "True",
+          "required": false
+      },
+       "MY_PASS": {
+          "description": "Leave empty if dont need password else enter Your Password",
+          "value": "",
+          "required": false
+      },
+      "BIND_ADRESS": {
+          "description": "Read the readme for more info about this var  Leave Empty  For heroku",
+          "required": false
+      },
+      "FQDN": {
+          "description": "Read the readme for more info about this var  **Leave Empty for heroku**",
+          "required": false
+      },
+      "SESSION_NAME": {
+          "description": " Session Name for Bot [ Add Code-X-Mania]",
+          "value": "Code-X-Mania",
+          "required": false
       }
-    ]
+  },
+  "buildpacks": [{
+      "url": "heroku/python"
+    }],
+  "formation": {
+      "web": {
+          "quantity": 1,
+          "size": "free"
+      }
   }
+}
