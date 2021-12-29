@@ -8,7 +8,7 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/TheOnlyMrLucifer,
+    "website": "https://t.me/TheOnlyMrLucifer",
     "repository": "https://github.com/TheOnlyMrLucifer/TGStreamer",
     "success_url": "https://t.me/TheOnlyMrLucifer",
     "env": {
